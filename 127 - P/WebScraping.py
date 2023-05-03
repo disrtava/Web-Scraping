@@ -20,7 +20,7 @@ for row in collected_data.find_all('tr'):
 
 star_data = star_data[1:]
 
-with open("stars.csv", "w", newline="") as f:
+with open("stars.csv", "w", newline="",encoding="utf8") as f:
     writer = csv.writer(f)
     writer.writerow(headers)
     writer.writerows(star_data)
